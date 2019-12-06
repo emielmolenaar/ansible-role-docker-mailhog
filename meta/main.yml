@@ -1,0 +1,14 @@
+---
+
+galaxy_info:
+  role_name: ansible-role-docker-mailhog
+  author: Emiel Molenaar
+  description: An Ansible role to setup Mailhog in a docker container
+  issue_tracker_url: https://github.com/emielmolenaar/ansible-role-docker-mailhog/issues
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.9
+  galaxy_tags:
+    - docker
+    - mailhog
+    - smtp
+  dependencies: []

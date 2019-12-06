@@ -1,0 +1,19 @@
+---
+
+# Check out https://github.com/mailhog/MailHog/blob/master/docs/CONFIG.md for the various configuration options of Mailhog.
+
+mailhog_hostname: mailhog.local
+
+mailhog_api_bind_addr: 0.0.0.0
+mailhog_api_bind_port: 8025
+
+mailhog_ui_bind_addr: 0.0.0.0
+mailhog_ui_bind_port: 8025
+
+mailhog_smtp_bind_addr: 0.0.0.0
+mailhog_smtp_bind_port: 1025
+
+mailhog_storage: memory
+mailhog_mongodb_collection: messages
+mailhog_mongodb_db: mailhog
+mailhog_mongodb_uri: 127.0.0.1:27017
