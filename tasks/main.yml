@@ -6,7 +6,7 @@
       - "{{ mailhog_api_bind_port }}:{{ mailhog_api_bind_port }}/tcp"
       - "{{ mailhog_ui_bind_port }}:{{ mailhog_ui_bind_port }}/tcp"
       - "{{ mailhog_smtp_bind_port }}:{{ mailhog_smtp_bind_port }}/tcp"
-  
+
 - name: "[docker] Setup the mailhog docker container"
   docker_container:
     name: mailhog
@@ -15,7 +15,7 @@
     restart: yes
     restart_policy: unless-stopped
     ports: "{{ mailhog_docker_ports | unique }}"
-    env: 
+    env:
       MH_HOSTNAME: "{{ mailhog_hostname }}"
       MH_API_BIND_ADDR: "{{ mailhog_api_bind_addr }}:{{ mailhog_api_bind_port }}"
       MH_UI_BIND_ADDR: "{{ mailhog_ui_bind_addr }}:{{ mailhog_ui_bind_port }}"
