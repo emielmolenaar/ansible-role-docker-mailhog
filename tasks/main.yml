@@ -19,7 +19,7 @@
       MH_HOSTNAME: "{{ mailhog_hostname }}"
       MH_API_BIND_ADDR: "{{ mailhog_api_bind_addr }}:{{ mailhog_api_bind_port }}"
       MH_UI_BIND_ADDR: "{{ mailhog_ui_bind_addr }}:{{ mailhog_ui_bind_port }}"
-      MH_SMTP_BIND_ADDR: "{{ mailhog_smtp_bind_addr }}:{{ mailhog_smtp_bind_port}}"
+      MH_SMTP_BIND_ADDR: "{{ mailhog_smtp_bind_addr }}:{{ mailhog_smtp_bind_port }}"
       MH_STORAGE: "{{ mailhog_storage }}"
       MH_MONGO_COLLECTION: "{{ mailhog_mongodb_collection }}"
       MH_MONGO_DB: "{{ mailhog_mongodb_db }}"
